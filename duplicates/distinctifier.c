@@ -22,12 +22,12 @@ int main() {
         for (int i = 0; i < size; ++i)
             scanf("%d", &nums[i]);
 
-        printf("Original: ");
-        print_arr(nums, size);
+        // printf("Original: ");
+        // print_arr(nums, size);
 
         unsigned int new_size = distinctify(nums, size);
 
-        printf("Set: ");
+        // printf("Set: ");
         print_arr(nums, new_size);
     }
 }
