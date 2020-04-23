@@ -1,7 +1,13 @@
+/************************************\
+** Spiral Numbers                   **
+**                                  **
+** Author: @theteachr (Nikhil CSB)  **
+\************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 
-void _print(unsigned short** m, unsigned short n) {
+    void _print(unsigned short **m, unsigned short n) {
     int row, col;
 
     for (row = 0; row < n; ++row) {
