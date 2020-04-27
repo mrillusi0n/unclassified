@@ -55,6 +55,7 @@ void spiralize(unsigned short n) {
             // printf("\n");
         }
     }
+    
     _print(spiral, n);
 }
 
