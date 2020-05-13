@@ -8,23 +8,28 @@
 
 char *VERSES[] = {
     "3Fizz",
-    "5Buzz"
+    "4Buzz",
+    "5Boob"
 };
+
+int NUM_VERSES = 3;
 
 void fizzbuzz(int num)
 {
     int flag = 0;
 
-    if (num % 3 == 0)
+    for (int i = 0; i < NUM_VERSES; ++i)
     {
-        printf("Fizz");
-        flag++;
-    }
+        int div;
+        char msg[5];
 
-    if (num % 5 == 0)
-    {
-        printf("Buzz");
-        flag++;
+        sscanf(VERSES[i], "%d%s", &div, msg);
+
+        if (num % div == 0)
+        {
+            printf("%s", msg);
+            flag++;
+        }
     }
 
     if (!flag)
@@ -35,7 +40,7 @@ void fizzbuzz(int num)
 
 int main()
 {
-    for (int i = 0; i < 100; ++i)
+    for (int i = 0; i < 40; ++i)
         fizzbuzz(i);
 }
 
