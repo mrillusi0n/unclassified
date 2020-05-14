@@ -9,7 +9,7 @@
 char *VERSES[] = {
     "3Fizz",
     "4Buzz",
-    "5Boob"
+    "5Boop"
 };
 
 int NUM_VERSES = 3;
