@@ -1,8 +1,8 @@
 /************************************\
-** Probably the fastest to compute  **
-** whether a given number is even   **
-**                                  **
-** Author: @theteachr (Nikhil CSB)  **
+ * Probably the fastest to compute  *
+ * whether a given number is even   *
+ *                                  *
+ * Author: @theteachr (Nikhil CSB)  *
 \************************************/
 
 #include <stdio.h>

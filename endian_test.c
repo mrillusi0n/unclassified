@@ -1,9 +1,9 @@
 /************************************\
-** A big endian system outputs an   **
-** 'a', while a little endian       **
-** system outputs a 'b'.            **
-**                                  **
-** Author: @theteachr (Nikhil CSB)  **
+ * A big endian system outputs an   *
+ * 'a', while a little endian       *
+ * system outputs a 'b'.            *
+ *                                  *
+ * Author: @theteachr (Nikhil CSB)  *
 \************************************/
 
 #include <stdio.h>

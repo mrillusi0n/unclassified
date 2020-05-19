@@ -1,7 +1,7 @@
 /************************************\
-** Fizzzz Buzzzzz                   **
-**                                  **
-** Author: @theteachr (Nikhil CSB)  **
+ * Fizzzz Buzzzzz                   *
+ *                                  *
+ * Author: @theteachr (Nikhil CSB)  *
 \************************************/
 
 #include <stdio.h>

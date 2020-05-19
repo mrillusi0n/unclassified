@@ -1,9 +1,8 @@
 /********************************\
+ * Return ASCII Number          *
+ * of a characer.               *
  *                              *
- *   Return ASCII Number        *
- *   of a characer.             *
- *                              *
- *   Author: @theteachr         *
+ * Author: @theteachr           *
 \********************************/
 
 #include <stdio.h>
