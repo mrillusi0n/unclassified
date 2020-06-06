@@ -3,6 +3,9 @@
  * to fiddle with letter         *
  * cases.                        *
  *                               *
+ * (Will mess up if the          *
+ * functions are given chars     *
+ * that are not letters.)        *
  *                               *
  * Author: @theteachr            *
 \*********************************/
