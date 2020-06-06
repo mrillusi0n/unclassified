@@ -29,7 +29,7 @@ char swap_case(char c)
 
 int main()
 {
-    char letters[] = { 'h', 'w', 'P', 'i', 'u', 'v' };
+    char letters[] = { 'h', 'w', 'P', 'i', 'u', 'v', 0 };
 
     for (int i = 0; letters[i] != 0; i++)
         printf("%c ", swap_case(letters[i]));
