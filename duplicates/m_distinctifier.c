@@ -1,3 +1,13 @@
+/********************************\
+ * Given an array of sorted     *
+ * numbers, removes the dupes.  *
+ *                              *
+ *                              *
+ *                              *
+ *                              *
+ * Author: @theteachr           *
+\********************************/
+
 #include <stdio.h>
 
 unsigned int distinctify(int *, unsigned int);

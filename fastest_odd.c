@@ -1,3 +1,10 @@
+/************************************\
+ * Probably the fastest to compute  *
+ * whether a given number is odd.   *
+ *                                  *
+ * Author: @theteachr (Nikhil CSB)  *
+\************************************/
+
 #include <stdio.h>
 
 char is_odd(int n)
