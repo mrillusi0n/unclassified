@@ -12,29 +12,28 @@
 
 #include <stdio.h>
 
-char upper_case(char c)
-{
-    return c & 0b11011111;
+char upper_case(char c) {
+    return c & ~32;
 }
 
-char lower_case(char c)
-{
-    return c | 0b00100000;
+char lower_case(char c) {
+    return c | 32;
 }
 
-char swap_case(char c)
-{
-    return c ^ 0b00100000;
+char swap_case(char c) {
+    return c ^ 32;
 }
 
-int main()
-{
+int main() {
     char letters[] = { 'h', 'w', 'P', 'i', 'u', 'v', 0 };
 
-    for (int i = 0; letters[i] != 0; i++)
-        printf("%c ", swap_case(letters[i]));
-    printf("\n");
+    for (int i = 0; letters[i] != 0; i++) {
+        int letter = letters[i];
+
+        printf("swap(%c) = %c, ", letter, swap_case(letter));
+        printf("lower(%c) = %c, ", letter, lower_case(letter));
+        printf("upper(%c) = %c\n", letter, upper_case(letter));
+    }
 
     return 0;
 }
-
