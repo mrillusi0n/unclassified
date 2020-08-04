@@ -6,28 +6,17 @@
 
 #include <stdio.h>
 
-char *VERSES[] = {
-    "3Fizz",
-    "5Buzz",
-    "7Boop"
+struct Verse {
+    int num;
+    char *verse;
 };
 
-int NUM_VERSES = 3;
-
-void fizzbuzz(int num, char *verses[], int n_verses)
-{
+void fizzbuzz(int num, struct Verse *verses, int n_verses) {
     int flag = 0;
 
-    for (int i = 0; i < n_verses; i++)
-    {
-        int div;
-        char msg[5];
-
-        sscanf(verses[i], "%d%s", &div, msg);
-
-        if (num % div == 0)
-        {
-            printf("%s", msg);
+    for (int i = 0; i < n_verses; i++) {
+        if (num % verses[i].num == 0) {
+            printf("%s", verses[i].verse);
             flag++;
         }
     }
@@ -38,8 +27,15 @@ void fizzbuzz(int num, char *verses[], int n_verses)
     printf("\n");
 }
 
-int main()
-{
-    for (int i = 0; i < 40; ++i)
-        fizzbuzz(i, VERSES, 3);
+int main() {
+    struct Verse verses[] = {
+        {3, "Fizz"},
+        {5, "Buzz"},
+        {7, "Shizz"},
+    };
+
+    int times = 100;
+
+    for (int i = 0; i < times; ++i)
+        fizzbuzz(i, verses, 3);
 }
