@@ -52,11 +52,12 @@ void swap(int *a, int *b) {
 
 unsigned int distinctify(int *arr, unsigned int size) {
     unsigned int j;
+
     for (unsigned int i = 1, j = 0; i < size; ++i) {
         if (arr[j] == arr[i])
             continue;
         swap(arr + ++j, arr + i);
     }
+
     return j + 1;
 }
-
