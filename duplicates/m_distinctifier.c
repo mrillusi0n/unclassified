@@ -53,6 +53,8 @@ void swap(int *a, int *b) {
 unsigned int distinctify(int *arr, unsigned int size) {
     unsigned int j;
 
+    // j is overshadowed by the one declared
+    // in the init block for the `for`.
     for (unsigned int i = 1, j = 0; i < size; ++i) {
         if (arr[j] == arr[i])
             continue;
