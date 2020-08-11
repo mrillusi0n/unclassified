@@ -1,8 +1,8 @@
 /************************************\
  * Probably the fastest to compute  *
- * the double of a given number     *
+ * the double of a given number.    *
  *                                  *
- * Author: @theteachr (Nikhil CSB)  *
+ * Author: @theteachr               *
 \************************************/
 
 #include <stdio.h>

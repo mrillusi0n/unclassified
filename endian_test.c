@@ -3,7 +3,7 @@
  * 'a', while a little endian       *
  * system outputs a 'b'.            *
  *                                  *
- * Author: @theteachr (Nikhil CSB)  *
+ * Author: @theteachr               *
 \************************************/
 
 #include <stdio.h>

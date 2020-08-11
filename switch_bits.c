@@ -33,7 +33,7 @@ int rev_int(int n) {
 int _rev_int(int n, int acc) {
     if (!n)
         return acc;
-    return _rev_int(n/10, acc*10+n%10);
+    return _rev_int(n / 10, acc * 10 + n % 10);
 }
 
 int twice(int n) {

@@ -2,7 +2,7 @@
  * Probably the fastest to compute  *
  * whether a given number is odd.   *
  *                                  *
- * Author: @theteachr (Nikhil CSB)  *
+ * Author: @theteachr               *
 \************************************/
 
 #include <stdio.h>

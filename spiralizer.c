@@ -1,7 +1,7 @@
 /************************************\
  * Spiral Numbers                   *
  *                                  *
- * Author: @theteachr (Nikhil CSB)  *
+ * Author: @theteachr               *
 \************************************/
 
 #include <stdio.h>
