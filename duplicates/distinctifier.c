@@ -1,6 +1,6 @@
 /********************************\
  * Given an array of sorted     *
- * numbers, removes the dupes.  *
+ * numbers, remove  the dupes.  *
  *                              *
  *                              *
  *                              *
