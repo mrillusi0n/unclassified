@@ -54,9 +54,8 @@ int distinctify(int *arr, int size) {
     int j, i;
     
     for (i = 1, j = 0; i < size; ++i) {
-        if (arr[j] == arr[i])
-            continue;
-        swap(arr + ++j, arr + i);
+        if (arr[j] != arr[i])
+            swap(arr + ++j, arr + i);
     }
 
     return j + 1;
