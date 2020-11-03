@@ -13,18 +13,17 @@ struct Verse {
 
 void fizzbuzz(int num, struct Verse *verses, int n_verses) {
     int flag = 0;
+	char str_n[4];
 
-    for (int i = 0; i < n_verses; i++) {
-        if (num % verses[i].num == 0) {
-            printf("%s", verses[i].verse);
-            flag++;
-        }
-    }
+	sprintf(str_n, "%d", num);
 
-    if (!flag)
-        printf("%d", num);
+	char *choice[] = {str_n, ""};
 
-    printf("\n");
+    for (int i = 0; i < n_verses; i++)
+		flag |= (num % verses[i].num) ? 0 : 1 & printf("%s", verses[i].verse);
+
+	printf("flag = %d, num = %d\n", flag, num);
+    printf("%s\n", choice[flag]);
 }
 
 int main() {
