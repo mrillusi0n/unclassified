@@ -20,9 +20,8 @@ void fizzbuzz(int num, struct Verse *verses, int n_verses) {
 	char *choice[] = {str_n, ""};
 
     for (int i = 0; i < n_verses; i++)
-		flag |= (num % verses[i].num) ? 0 : 1 & printf("%s", verses[i].verse);
+		flag |= (num % verses[i].num) ? 0 : 0 < printf("%s", verses[i].verse);
 
-	printf("flag = %d, num = %d\n", flag, num);
     printf("%s\n", choice[flag]);
 }
 
